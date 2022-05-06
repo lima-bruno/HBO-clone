@@ -1,0 +1,33 @@
+
+.img-banner{
+  width: 80%;
+}
+.title-banner{
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  color: rgb(255, 255, 255);
+}
+.description-banner{
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: rgb(255, 255, 255);
+}
+.button-banner{
+  border-radius: 26px;
+  width: 50%;
+  height: 44px;
+  border: none;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1.8px;
+  color: white;
+  background-color: #ffffff2e;
+  font-weight: bold;
+}
+
+.button-banner:hover{
+  background-color: rgb(91, 28, 230);
+}

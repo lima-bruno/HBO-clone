@@ -1,0 +1,14 @@
+.banner{
+  height: 95vh;
+}
+.iframe{
+  z-index: 0;
+}
+.moldura{
+  -webkit-box-shadow: inset 0px -130px 29px -15px #000000!important;
+  box-shadow: inset 0px -50px 29px -15px #000000;
+  /* z-index: 1; */
+}
+.banner-options{
+  width: 35%;
+}

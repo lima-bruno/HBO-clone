@@ -1,0 +1,61 @@
+.div-side-nav {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(15, 15, 15, 0.5);
+}
+
+.side-bar {
+  width: 360px;
+  background-color: rgb(15, 15, 15);
+  color: rgb(153, 153, 153);
+}
+
+.side-bar>ul>li {
+  margin-bottom: 16px;
+  font-size: 22px;
+  width: 80%;
+}
+
+.exit {
+  color: rgb(153, 153, 153);
+}
+
+hr {
+  border-top: 1px solid rgb(153, 153, 153);
+  width: 90%;
+}
+
+.link-side-bar {
+  list-style: none;
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 23px;
+}
+
+.exit:hover,
+.link-side-bar:hover {
+  color: rgb(158, 134, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.estudio {
+  border: 2px solid #5d41de;
+  width: 48%;
+  margin-bottom: 10px;
+  background-color: rgba(117, 62, 239, 0.08);
+}
+
+.estudio:hover {
+  cursor: pointer;
+  background-image: linear-gradient(135deg, rgb(80, 52, 214), rgb(142, 114, 255) 50%, rgb(173, 190, 254) 100%);
+  overflow: hidden;
+}
+
+.left-list {
+  height: 90%;
+}
+
+::ng-deep.mat-drawer-inner-container {
+  overflow-y: hidden !important;
+}

@@ -1,0 +1,129 @@
+.header {
+  height: 10%;
+  background-color: black;
+  color: white;
+  z-index: 10;
+}
+.header:hover{
+  background-color: rgb(15, 15, 15);
+}
+
+.logo {
+  width: 129px;
+}
+
+.logo:hover,
+.img-profile:hover,
+.username:hover,
+.div_icons>i:hover,
+.pesquisar>i:hover {
+  cursor: pointer;
+}
+
+.img-profile {
+  width: 40px;
+  border-radius: 40px;
+  border: 3px solid #6c9fff;
+}
+
+.username {
+  margin-bottom: 0px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.div_icons>i {
+  font-size: 25px;
+}
+
+.pesquisar {
+  background-color: rgb(25, 25, 25);
+  height: 80%;
+  width: 80%;
+}
+
+.pesquisar>i {
+  font-size: 20px;
+}
+
+.pesquisar>input {
+  background-color: transparent;
+  border: 0px;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+}
+
+.pesquisar>input:focus {
+  box-shadow: 0 0 0 0;
+  border: 0 none;
+  outline: 0;
+}
+.side-bar {
+  width: 360px;
+  background-color: rgb(15, 15, 15);
+  color: rgb(153, 153, 153);
+}
+.side-bar>ul>li{
+  margin-bottom: 16px;
+  font-size: 22px;
+  width: 80%;
+}
+.exit{
+  color: rgb(153, 153, 153);
+}
+hr {
+  border-top: 1px solid rgb(153, 153, 153);
+  width: 80%;
+}
+
+.link-side-bar{
+  list-style: none;
+  text-decoration: none;
+  color: rgb(153, 153, 153);
+  font-size: 23px;
+}
+
+.exit:hover, .link-side-bar:hover{
+  color: rgb(158, 134, 255);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+mat-drawer-container{
+  height: 100vh;
+  background-color: transparent;
+}
+
+::ng-deep.mat-drawer-content{
+  overflow: hidden!important;
+}
+
+/* ------------------------------- */
+
+.estudio{
+  border: 2px solid #5d41de;
+  width: 48%;
+  margin-bottom: 10px;
+  background-color: rgba(117, 62, 239, 0.08);
+}
+
+.estudio:hover{
+  cursor: pointer;
+  background-image: linear-gradient(135deg, rgb(80,52,214), rgb(142,114,255) 50%, rgb(173,190,254) 100%);
+}
+.left-list{
+  width: 90%;
+}
+.closeRight{
+  font-size: 25px;
+}
+.closeRight:hover{
+  cursor: pointer;
+  color: rgb(158, 134, 255);
+}
+
+.banner-options{
+  width: 35%;
+}

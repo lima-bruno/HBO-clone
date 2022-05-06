@@ -1,0 +1,25 @@
+<div class="watching ps-5">
+  <div class="w-100 d-flex flex-row justify-content-start">
+    <h2 class=" title">Continuar Assistindo</h2>
+    <i class="bi bi-arrow-right-short title-arrow"></i>
+  </div>
+</div>
+<div>
+  <div class="w-100 overflow-hidden position-relative watching-container">
+    <div class="position-absolute d-flex align-items-center justify-content-center scroll">
+      <i class="bi bi-chevron-compact-left"></i>
+    </div>
+    <div class="list w-100 d-flex flex-row" [style.margin-left]="margin" >
+      <div *ngFor="let watching of watchingList" class="card-list me-3 d-flex flex-column">
+          <img [ngClass]="{'mb-3':!watching.nextEP}" src='{{"../../../assets/watchingList/" + watching.banner}}'>
+          <span *ngIf="watching.nextEP" class="mt-1" id="nextEp">Próximo Episódio</span>
+          <span>{{watching.name}} <span>{{watching.season}} {{watching.episode}}</span></span>
+      </div>
+    </div>
+    <div class="position-absolute end-0 d-flex top-0 align-items-center
+                justify-content-center scroll-rigth"
+        (click)="toRigth()">
+      <i class="bi bi-chevron-compact-right"></i>
+    </div>
+  </div>
+</div>

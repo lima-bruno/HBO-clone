@@ -1,0 +1,71 @@
+.body{
+  background-image: url("../../../assets/background/WIW_Desktop.svg");
+  height: 100vh;
+}
+.logo{
+  width: 129px;
+  height: 22px;
+}
+
+h1{
+  color: rgb(240,240,240);
+  font-size: 50px;
+  font-style: normal;
+  line-height: 60px;
+}
+
+.div_avatar{
+  width: 190px;
+  height: 190px;
+}
+
+.div_avatar > h3{
+  bottom: -40px;
+  color: white;
+  font-size: 18px;
+}
+.avatar{
+  width: 165px;
+  height: 165px;
+  border-radius: 165px;
+  border: 5px solid #6c9fff;
+  transition: transform .2s;
+}
+
+.avatar:hover{
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.manager{
+  color: rgb(158, 134, 255);
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.options{
+  width: 50%;
+}
+
+.options > span{
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 40%;
+  border-radius: 80px;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 1.8px;
+  font-weight: bold;
+}
+
+.options > span:hover{
+  background-color: rgb(91, 28, 230);
+  cursor: pointer;
+}
+
+.options > span > img{
+  height: 50%;
+}

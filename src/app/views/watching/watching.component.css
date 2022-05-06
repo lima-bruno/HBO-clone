@@ -1,0 +1,61 @@
+.watching{
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+.title{
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgb(240, 240, 240);
+  font-weight: bolder;
+}
+.title-arrow{
+  color: rgb(240, 240, 240);
+  font-size: 25px;
+}
+.title:hover, .title-arrow:hover{
+  cursor: pointer;
+}
+.list{
+  height: 280px;
+  margin-left: 3rem;
+}
+.card-list{
+  width: 200px;
+}
+.card-list>img{
+  height: 200px;
+}
+.card-list>span{
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+.card-list>span>span{
+  color: rgb(153, 153, 153);
+}
+#nextEp{
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  color: rgb(153, 153, 153);
+}
+
+.scroll, .scroll-rigth{
+  height: 200px;
+  width: 55px;
+  color: transparent;
+  font-size: 40px;
+}
+.watching-container:hover .scroll-rigth{
+  background-color: rgba(15, 15, 15, 0.85);
+  color: white;
+  opacity: 0.75;
+}
+.scroll-rigth:hover{
+  opacity: 1;
+  cursor: pointer;
+}
