@@ -1,0 +1,4 @@
+ @-webkit-keyframes slide-fwd-tl{0%{-webkit-transform:translateZ(0) translateY(0) translateX(0);transform:translateZ(0) translateY(0) translateX(0)}100%{-webkit-transform:translateZ(160px) translateY(-100px) translateX(-100px);transform:translateZ(160px) translateY(-100px) translateX(-100px)}}@keyframes slide-fwd-tl{0%{-webkit-transform:translateZ(0) translateY(0) translateX(0);transform:translateZ(0) translateY(0) translateX(0)}100%{-webkit-transform:translateZ(160px) translateY(-100px) translateX(-100px);transform:translateZ(160px) translateY(-100px) translateX(-100px)}}
+ @-webkit-keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}
+ @-webkit-keyframes fade-out{0%{opacity:1}100%{opacity:0}}@keyframes fade-out{0%{opacity:1}100%{opacity:0}}
+

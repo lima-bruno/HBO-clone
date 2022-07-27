@@ -33,8 +33,33 @@
 
 .watching-banner {
   height: 200px !important;
+  width: 380px;
+}
+.add_list{
+  height: 200px;
+  width: 380px;
+}
+.add_list:hover{
+  background: url('../../../assets/background/overlay.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.add_list>i{
+  display: none;
+  font-size: 50px;
+  color: white;
+  height: 50px;
+  border-radius: 30px;
+}
+.add_list:hover>i{
+  display: flex;
 }
 
+.add_list>i:hover{
+  color: rgb(158, 134, 255, 0.8);
+  background-color: rgb(158, 134, 255, 0.25);
+  cursor: pointer;
+}
 .nextEP,
 .nameStream {
   font-size: 15px !important;
@@ -42,28 +67,6 @@
   line-height: 20px !important;
   color: rgb(255, 255, 255) !important;
   font-weight: 700 !important;
-}
-
-::ng-deep.mat-progress-bar-background {
-  background-color: #ffffff00;
-}
-
-.progressWatching {
-  position: absolute;
-  top: 185px;
-  z-index: 1;
-  width: 90%;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  height: 5px;
-  background-color: #46464652;
-}
-
-::ng-deep.mat-progress-bar-fill::after {
-  background: rgb(81, 170, 255);
-  background: linear-gradient(90deg, rgba(81, 170, 255, 1) 0%, rgba(86, 166, 255, 1) 44%, rgba(217, 68, 255, 1) 100%);
 }
 
 .ep-Season {
@@ -84,12 +87,11 @@
   color: transparent;
   font-size: 40px;
 }
-.watching-container{
-  background: rgb(20,1,40);
-background: linear-gradient(0deg, rgba(20,1,40,0) 3%, rgba(20,1,40,0.2231267507002801) 26%, rgba(20,1,40,0.6993172268907564) 54%, rgba(0,0,0,0.6993172268907564) 100%);
+
+.jfy-container{
 }
 
-.watching-container:hover .scroll-rigth {
+.jfy-container:hover .scroll-rigth {
   background-color: rgba(15, 15, 15, 0.85);
   color: white;
   opacity: 0.75;
@@ -108,8 +110,8 @@ background: linear-gradient(0deg, rgba(20,1,40,0) 3%, rgba(20,1,40,0.22312675070
   display: none;
 }
 
-.watching-container:hover ::ng-deep.swiper-button-prev,
-.watching-container:hover ::ng-deep.swiper-button-next {
+.jfy-container:hover ::ng-deep.swiper-button-prev,
+.jfy-container:hover ::ng-deep.swiper-button-next {
   position: absolute !important;
   z-index: 1 !important;
   height: 200px !important;
@@ -117,8 +119,8 @@ background: linear-gradient(0deg, rgba(20,1,40,0) 3%, rgba(20,1,40,0.22312675070
   background-color: rgba(15, 15, 15, 0.527) !important;
 }
 
-.watching-container:hover ::ng-deep.swiper-button-prev:hover,
-.watching-container:hover::ng-deep.swiper-button-next:hover {
+.jfy-container:hover ::ng-deep.swiper-button-prev:hover,
+.jfy-container:hover::ng-deep.swiper-button-next:hover {
   background-color: rgba(15, 15, 15, 0.8) !important;
 }
 

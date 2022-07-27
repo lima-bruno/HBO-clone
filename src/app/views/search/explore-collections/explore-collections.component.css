@@ -1,0 +1,51 @@
+.title_div {
+  height: 40px;
+  width: 100%;
+  z-index: 1;
+}
+
+.title {
+  font-size: 28px;
+  line-height: 32px;
+  letter-spacing: 0px;
+  color: rgb(240, 240, 240);
+  font-weight: bolder;
+}
+
+::ng-deep.swiper-wrapper {
+  display: flex !important;
+}
+
+::ng-deep.swiper-button-disabled {
+  display: none;
+}
+
+.explore-container:hover ::ng-deep.swiper-button-prev,
+.explore-container:hover ::ng-deep.swiper-button-next {
+  position: absolute !important;
+  z-index: 1 !important;
+  height: 100% !important;
+  width: 4% !important;
+  background-color: rgba(15, 15, 15, 0.527) !important;
+}
+
+.explore-container:hover ::ng-deep.swiper-button-prev:hover,
+.explore-container:hover::ng-deep.swiper-button-next:hover {
+  background-color: rgba(15, 15, 15, 0.8) !important;
+}
+
+::ng-deep.swiper-button-prev {
+  left: 0 !important;
+  background-image: url("../../../../assets/icons/icons8-left-96.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+::ng-deep.swiper-button-next {
+  right: 0 !important;
+  background-image: url("../../../../assets/icons/icons8-right-96.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}

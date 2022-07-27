@@ -1,0 +1,30 @@
+<div class="p-5 d-flex justify-content-between">
+  <img class='logo' src="../../../../assets/logo/dt-hbomax-logo-in_app.svg">
+  <i class="bi bi-x-lg ms-3 close" data-bs-dismiss="offcanvas"></i>
+</div>
+<div class="d-flex flex-row">
+  <div class="w-50 h-50 d-flex flex-column ps-5 align-items-start justify-content-center">
+    <h2 class="mb-2 title">Aproveite a HBO Max!</h2>
+    <h5 class="mb-3 description w-50">Conheça personagens icônicos, descubra novas histórias e títulos exclusivos.</h5>
+    <button class="choseplan w-25 mb-2">Entrar na sua conta</button>
+  </div>
+  <div class="d-flex w-50 justify-content-center">
+    <form #authForm="ngForm" class="signup w-75 p-4 rounded d-flex justify-content-center flex-column"
+          (ngSubmit)="cadastrar(authForm)">
+      <h4 class="title w-100 text-center">Cadastrar-se</h4>
+      <div class="mb-3">
+        <label for="email" class="form-label" style="color: white;" >Email</label>
+        <input type="email" class="form-control form-hbo" id="email" ngModel name="email" required email autocomplete="off">
+        <span *ngIf="emailInvalido" class="mt-1 card w-25 erro">Email inválido</span>
+        <span *ngIf="emailExiste" class="mt-1 card w-50 erro">Esse email já existe!</span>
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label" style="color: white;">Senha</label>
+        <input type="password" class="form-control form-hbo" id="exampleFormControlInput1" ngModel name="senha" required minlength="8">
+      </div>
+      <div class="w-100 mb-3 d-flex justify-content-center">
+        <button type="submit" class="button-login" [disabled]="!authForm.valid">Entrar</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -6,23 +6,29 @@
             align-items-center
             header
             ps-5
-            pe-5">
+            pe-5" >
   <div class="div_icons">
     <i class="bi bi-list me-5" data-bs-toggle="offcanvas" href="#offcanvasExample"></i>
-    <i class="bi bi-search"></i>
+    <i *ngIf="!pesquisar" routerLink="/search" class="bi bi-search" (click)="search()"></i>
   </div>
-  <!-- <div *ngIf="pesquisar" class="pesquisar d-flex justify-content-start p-3 align-items-center">
-    <i class="bi bi-x-lg me-2"></i>
+  <div *ngIf="pesquisar" class="pesquisar d-flex justify-content-start p-3 align-items-center">
+    <i (click)="search()" routerLink="/page" class="bi bi-x-lg me-2"></i>
     <input type="text" placeholder="O que você está procurando?">
-  </div> -->
-  <!-- <div *ngIf="!pesquisar">
+  </div>
+  <div *ngIf="!pesquisar">
     <img class='logo' src="../../../assets/logo/dt-hbomax-logo-in_app.svg">
-  </div> -->
-  <div class="d-flex flex-row align-items-center">
-    <img routerLink="rigth-menu" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-profile me-2" src="..//../../assets/profile/patolino.jpg">
+  </div>
+  <div *ngIf='login == "true"' class="d-flex flex-row align-items-center">
+    <img routerLink="rigth-menu" data-bs-toggle="modal" data-bs-target="#exampleModal" class="img-profile me-2" src="assets/profile/patolino.jpg">
     <!-- <span class="me-2" style="width: 40px;"><i class="bi bi-x-lg closeRight"></i></span> -->
     <h3 routerLink="rigth-menu" class="username">Bruno</h3>
   </div>
+  <div *ngIf='login != "true"' class="d-flex flex-row align-items-center">
+    <h3 class="username me-5" data-bs-toggle="offcanvas" href="#offcanvasEnjoy">Assine Agora</h3>
+    <!-- <span class="me-2" style="width: 40px;"><i class="bi bi-x-lg closeRight"></i></span> -->
+    <h3 class="username ms-5" (click)="openDialog()">Entrar</h3>
+  </div>
 </nav>
 <app-left-alternative-menu class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"></app-left-alternative-menu>
-<app-rigth-alternative-menu></app-rigth-alternative-menu>
+<app-rigth-alternative-menu *ngIf='login == "true"'></app-rigth-alternative-menu>
+<app-out-menu class="offcanvas offcanvas-top enjoy" tabindex="-1" id="offcanvasEnjoy"></app-out-menu>

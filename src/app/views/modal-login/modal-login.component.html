@@ -1,0 +1,37 @@
+<span class="w-100 d-flex justify-content-center position-relative">
+    <i style="color:white" class="bi bi-x-lg end-0 position-absolute" [mat-dialog-close]></i>
+    <h1 mat-dialog-title class="text-center title">Entrar</h1>
+</span>
+<p class="w-100 text-center haveaccount">Você tem uma conta HBO Max?</p>
+<div mat-dialog-content>
+  <form >
+    <div class="mb-3">
+      <label for="email" class="form-label" style="color: white;">Email</label>
+      <input type="email" class="form-control form-hbo" id="email" autocomplete="off">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label" style="color: white;">Password</label>
+      <input type="password" class="form-control form-hbo" id="exampleFormControlInput1">
+    </div>
+    <div class="w-100 mb-3 d-flex justify-content-center">
+      <button class="button-login">Entrar</button>
+    </div>
+  </form>
+  <div class="mb-3 help w-100 text-center">Esqueceu a senha?</div>
+  <div class="w-100 mb-3 orsection d-flex flex-row justify-content-around align-items-center">
+    <div></div>
+    <span>OU</span>
+    <div></div>
+  </div>
+  <p class="haveaccount text-center">
+    Você acessa a HBO Max por um provedor de TV, de internet ou de celular?
+  </p>
+  <div class="w-100 d-flex mb-3 justify-content-center">
+    <button class="provider">
+      Entrar com Provedor
+    </button>
+  </div>
+  <div class="d-flex help justify-content-center">
+    <span class="help">Precisa de ajuda?</span>
+  </div>
+</div>

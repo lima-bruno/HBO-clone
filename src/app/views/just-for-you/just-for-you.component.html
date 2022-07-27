@@ -1,0 +1,24 @@
+<div class="watching ps-5">
+  <div class="w-100 d-flex flex-row justify-content-start">
+    <h2 class=" title">Apenas para você</h2>
+    <i class="bi bi-arrow-right-short title-arrow"></i>
+  </div>
+</div>
+<div>
+  <div class="w-100 overflow-hidden position-relative jfy-container">
+      <div class="list w-100 pe-5 d-flex flex-row">
+        <swiper class="w-100 pe-5 d-flex flex-row" [config]="config">
+          <ng-container *ngFor="let stream of jfyList" class="d-flex">
+            <ng-template  swiperSlide class="card-list position-relative d-flex flex-column pe-5">
+                <img [ngClass]="{'mb-3':!stream.nextEP}" class="watching-banner"
+                  src='{{"assets/justForYou/" + stream.banner}}'>
+                  <div class="add_list position-absolute d-flex pb-1 pe-1
+                              justify-content-end align-items-end">
+                    <i class="bi bi-plus-circle"></i>
+                  </div>
+            </ng-template>
+          </ng-container>
+        </swiper>
+      </div>
+  </div>
+</div>

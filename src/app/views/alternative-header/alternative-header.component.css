@@ -127,3 +127,7 @@ mat-drawer-container{
 .banner-options{
   width: 35%;
 }
+.enjoy{
+  height: 100vh;
+  background-image: url('../../../assets//background/enjoy.png');
+}
